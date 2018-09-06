@@ -1,0 +1,24 @@
+<phpunit
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/4.5/phpunit.xsd"
+        verbose="true"
+        bootstrap="test/bootstrap.php"
+>
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src/</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="output/coverage-html" charset="UTF-8"/>
+        <log type="coverage-clover" target="output/coverage.xml"/>
+    </logging>
+    <testsuites>
+        <testsuite name="Till">
+            <directory>test/TillReciept</directory>
+        </testsuite>
+        <testsuite name="Bank">
+            <directory>test/BankAccount</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

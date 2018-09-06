@@ -1,0 +1,10 @@
+{
+  "products": [
+    "Baked Beans",
+    "Washing Up Liquid",
+    "Rubber Gloves",
+    "Bread",
+    "Butter"
+  ],
+  "currencies": ["GBP", "USD"]
+}
